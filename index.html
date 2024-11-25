@@ -1,0 +1,512 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="flag"
+			content="render_a9d60b28-298f-4dec-a0a7-e9181cade546" />
+        <link rel="stylesheet" href="/templates/css/styles.css" />
+		<script src="/templates/js/tailwindcss_3.4.js"></script>
+		<style type="text/css">
+			@page {
+  size: A4;
+  margin-top: 1.27cm;
+  margin-bottom: 1.27cm;
+  margin-left: 1.27cm;
+  margin-right: 1.27cm;
+  @top-right {
+    content: element(page-header);
+  }
+
+  @bottom-right {
+    content: element(page-footer);
+  }
+
+}
+
+@page:first {
+  @top-right {
+    content: none;
+  }
+
+}
+
+.page-header {
+  position: running(page-header);
+}
+
+.page-footer {
+  position: running(page-footer);
+}
+
+.page-number::after {
+  content: counter(page);
+}
+
+
+		</style>
+		<style type="text/tailwindcss">
+			* {
+  @apply p-0 m-0;
+}
+
+html {
+  @apply text-xs;
+}
+
+body {
+  @apply font-['CFont_Noto_Serif_SC','CFont_Spectral',_sans-serif] tracking-normal;
+}
+
+main {
+  @apply w-full space-y-6;
+}
+
+section[name="module"] {
+  @apply flex items-start justify-end;
+}
+
+section[name="module"][data-layout="row"] {
+  @apply flex-col gap-5;
+}
+
+section[name="module"][data-layout="col"] {
+  @apply flex-row gap-0;
+}
+
+section[name="module"][data-layout="col"] > [name="module-header"] {
+  @apply basis-1/5;
+}
+
+section[name="module"][data-layout="col"] > [name="module-body"] {
+  @apply basis-4/5;
+}
+
+header[name="module-header"] {
+  @apply w-full space-y-2 break-inside-avoid;
+}
+
+div[name="module-body"] {
+  @apply space-y-4 w-full;
+}
+
+div[name="module-body"]::before {
+  @apply content-[''] block break-before-avoid break-inside-auto;
+}
+
+article[name="module-article"] {
+  @apply space-y-2;
+}
+
+article[data-layout="col"] {
+  @apply flex items-start space-y-0;
+}
+
+article {
+  @apply break-inside-avoid;
+}
+
+h1[name="module-title"] {
+  @apply text-2xl font-medium leading-none;
+}
+
+[data-layout="col"] [name="module-title"] {
+  @apply text-lg pr-3;
+}
+
+span {
+  @apply text-base tracking-normal leading-none;
+}
+
+p {
+  @apply leading-tight text-justify;
+}
+
+hr {
+  @apply h-[1.5px] border-none;
+}
+
+#5b7cf153ba_slot_1 {
+  @apply text-5xl font-semibold;
+}
+
+#5b7cf153ba_slot_2 {
+  @apply text-xl font-normal;
+}
+
+#961e12e718_slot_paragraph {
+  @apply font-light text-base;
+}
+
+#8e70a00b5c_slot_1 {
+  @apply font-light text-base leading-relaxed italic text-gray-500;
+}
+
+#8e70a00b5c_slot_paragraph {
+  @apply font-light text-base;
+}
+
+#8e70a00b5c_slot_set_0 {
+  @apply font-semibold;
+}
+
+#8e70a00b5c_slot_set_1 {
+  @apply font-semibold;
+}
+
+#a4ee3123af_slot_1 {
+  @apply font-light text-base leading-relaxed italic text-gray-500;
+}
+
+#a4ee3123af_slot_paragraph {
+  @apply font-light text-base;
+}
+
+#a4ee3123af_slot_set_0 {
+  @apply font-semibold;
+}
+
+#a4ee3123af_slot_set_1 {
+  @apply font-semibold;
+}
+
+#1fb0d82068_slot_1 {
+  @apply font-light text-base leading-relaxed italic text-gray-500;
+}
+
+#1fb0d82068_slot_paragraph {
+  @apply font-light text-base;
+}
+
+#1fb0d82068_slot_set_0 {
+  @apply font-semibold;
+}
+
+#1fb0d82068_slot_set_1 {
+  @apply font-semibold;
+}
+
+#ac0a13585c_slot_1 {
+  @apply font-light text-base leading-relaxed italic text-gray-500;
+}
+
+#ac0a13585c_slot_paragraph {
+  @apply font-light text-base;
+}
+
+#ac0a13585c_slot_set_0 {
+  @apply font-semibold;
+}
+
+#ac0a13585c_slot_set_1 {
+  @apply font-semibold;
+}
+
+#7a94b89702_slot_1 {
+  @apply font-medium text-base;
+}
+
+#7a94b89702_slot_2 {
+  @apply text-gray-400 text-base;
+}
+
+#7a94b89702_slot_set_0 {
+  @apply font-medium text-base;
+}
+
+#7a94b89702_slot_set_1 {
+  @apply font-medium text-base;
+}
+
+#7a94b89702_slot_paragraph {
+  @apply font-light text-base;
+}
+
+#bb007717fc_slot_1 {
+  @apply font-medium text-base;
+}
+
+#bb007717fc_slot_2 {
+  @apply text-gray-400 text-base;
+}
+
+#bb007717fc_slot_set_0 {
+  @apply font-medium text-base;
+}
+
+#bb007717fc_slot_set_1 {
+  @apply font-medium text-base;
+}
+
+#bb007717fc_slot_paragraph {
+  @apply font-light text-base;
+}
+
+#e26d9a50ec_slot_1 {
+  @apply font-light text-base leading-relaxed text-gray-500 italic;
+}
+
+#e26d9a50ec_slot_paragraph {
+  @apply font-light text-base;
+}
+
+#e26d9a50ec_slot_set_0 {
+  @apply font-semibold;
+}
+
+#e26d9a50ec_slot_set_1 {
+  @apply font-semibold;
+}
+		</style>
+	</head>
+	<body>
+		<main>
+<section
+  id="5b7cf153ba"
+  name="profile"
+  class="flex justify-between items-start">
+  <div class="flex flex-col gap-2">
+    <span id="5b7cf153ba_slot_1" class="text-nowrap">何亦流</span>
+    <span id="5b7cf153ba_slot_2">24岁，男，ESFP</span>
+  </div>
+  <ul
+    class="min-w-12 flex flex-col gap-1 justify-items-end text-right font-light">
+      <li id="5b7cf153ba_slot_set_0">hisimon.me@gmail.com</li>
+      <li id="5b7cf153ba_slot_set_1">+86 185 5236 1817</li>
+      <li id="5b7cf153ba_slot_set_2">江苏省，南京市</li>
+      <li id="5b7cf153ba_slot_set_3">2000年6月</li>
+  </ul>
+</section>
+
+<div>
+  <p id="961e12e718_slot_paragraph">我具有国际化视野和多元化技能，拥有计算机科学及信息安全的学术背景，并在用户心理学、数据分析和人机交互设计领域深耕细作。我擅长将市场洞察力、技术能力与客户需求深度结合，推动商业机会转化为可衡量的成果。同时，留学经历和双语能力让我在国际化的商务场景中游刃有余。未来，我希望将自身技能与经验运用到商务拓展领域，助力企业实现业务增长与创新突破。 </p>
+</div>
+
+<section>
+	<div class="flex items-center mb-4">
+		<hr class="w-12 bg-gray-900" />
+		<hr class="flex-grow bg-gray-100" />
+	</div>
+	<section
+        id="854ab6e5b6"
+		name="module"
+		data-layout="col">
+		<header name="module-header">
+			<h1 name="module-title">综合性项目</h1>
+		</header>
+		<div name="module-body">
+			<article
+	id="8e70a00b5c"
+	name="module-article">
+	<div>
+		<div class="flex flex-wrap">
+			<span
+				id="8e70a00b5c_slot_1"
+				class="basis-full"
+				>2019-2022</span
+			>
+		</div>
+		<div class="flex justify-between gap-2">
+			<span id="8e70a00b5c_slot_set_0">Mockupgo - 面向设计师的样机聚合平台</span>
+			<span>
+				   
+				<span id="8e70a00b5c_slot_set_1"> 从技术到商业的探索 </span>
+				  
+			</span>
+		</div>
+	</div>
+	<p id="8e70a00b5c_slot_paragraph">Mockupgo是一个专为设计师群体服务的高端样机聚合平台，通过深入研究用户需求和行为，实现了一个高品质、广覆盖、快速定位的样机搜索平台。同时明确清晰的版权链，降低版权风险。  </p>
+	<p id="8e70a00b5c_slot_paragraph">我带领创业团队4位成员，完成12次项目书的版本迭代，历时5个月完成市场调研、产品规划、设计研发、部署运维、推广运营4大环节，并持续进行数据分析、财务规划、项目设计、开发维护等工作；  </p>
+	<p id="8e70a00b5c_slot_paragraph">项目上线4个月无广告投入，仅依赖自然流量裂变获客6500人次，订单数超2500单，营收超2.1万元，付费转化率38%，复购比26%，超出预期计划的1.2倍；  </p>
+	<p id="8e70a00b5c_slot_paragraph">项目荣获南京邮电大学“互联网+”创业大赛一等奖、“挑战杯”创业大赛金奖、南京市栖霞区创业扶持金。 </p>
+</article>
+<article
+	id="a4ee3123af"
+	name="module-article">
+	<div>
+		<div class="flex flex-wrap">
+			<span
+				id="a4ee3123af_slot_1"
+				class="basis-full"
+				>2022-2023</span
+			>
+		</div>
+		<div class="flex justify-between gap-2">
+			<span id="a4ee3123af_slot_set_0">品牌服务与活动传播</span>
+			<span>
+				   
+				<span id="a4ee3123af_slot_set_1"> 品牌活动与商务 </span>
+				  
+			</span>
+		</div>
+	</div>
+	<p id="a4ee3123af_slot_paragraph">独立服务了迪拜商会伦敦办公室的启动仪式、13场招商会谈、市政酒会等多场活动。通过全面的摄影与视频服务，打造了覆盖多个场景的宣传素材，助力活动在各类媒体上的传播和影响力提升。  </p>
+	<p id="a4ee3123af_slot_paragraph">此外，还服务了英国本土儿童珠宝品牌Clueden，支撑线下Pop-up活动的拍摄，并通过创意宣传视频联动Instagram推广，助力活动实现线上线下的协同效果。  </p>
+	<p id="a4ee3123af_slot_paragraph">该项目体现了我在商务活动中的视觉内容创作能力，以及对品牌形象的精准把控与商务细节的专业处理。 </p>
+</article>
+<article
+	id="1fb0d82068"
+	name="module-article">
+	<div>
+		<div class="flex flex-wrap">
+			<span
+				id="1fb0d82068_slot_1"
+				class="basis-full"
+				>2023.6-2023.9</span
+			>
+		</div>
+		<div class="flex justify-between gap-2">
+			<span id="1fb0d82068_slot_set_0">毕业季服务项目</span>
+			<span>
+				   
+				<span id="1fb0d82068_slot_set_1"> 市场运营与拓展 </span>
+				  
+			</span>
+		</div>
+	</div>
+	<p id="1fb0d82068_slot_paragraph">在伦敦期间，组织团队提供毕业季服务，包括毕业袍租赁与毕业摄影，项目运营高效且深受客户欢迎。团队采购了多套不同尺寸的毕业袍，并在为期2个月的毕业季期间实现平均每日出租率63%以上，每套毕业袍在收回成本的基础上额外贡献收益超过200%。  </p>
+	<p id="1fb0d82068_slot_paragraph">团队通过Google Calendar共享排期，精准协调租赁与摄影服务；同时设计高质量宣传物料，通过毕业群、专业群及公寓群开展多渠道营销。租赁毕业袍的客户还可享摄影服务折扣及送货上门服务，为客户提供了一站式便利体验。  </p>
+	<p id="1fb0d82068_slot_paragraph">该项目不仅积累了运营管理经验，还锻炼了我的团队协作及市场推广能力。 </p>
+</article>
+<article
+	id="ac0a13585c"
+	name="module-article">
+	<div>
+		<div class="flex flex-wrap">
+			<span
+				id="ac0a13585c_slot_1"
+				class="basis-full"
+				>2022-2023</span
+			>
+		</div>
+		<div class="flex justify-between gap-2">
+			<span id="ac0a13585c_slot_set_0">Photo Marklab - 标记你的相片</span>
+			<span>
+				   
+				<span id="ac0a13585c_slot_set_1"> 市场洞察与执行 </span>
+				  
+			</span>
+		</div>
+	</div>
+	<p id="ac0a13585c_slot_paragraph">彼时，莱卡相机水印流行的市场趋势渐显，我独立开发了面向摄影爱好者和内容创作者的水印生成工具Photo Mark，通过快速响应用户需求，实现了产品从设计到推广的完整闭环。  </p>
+	<p id="ac0a13585c_slot_paragraph">项目的核心功能基于自动提取照片EXIF数据，为用户生成包含厂商标志、光圈、快门、ISO等信息的个性化水印，同时提供可定制的水印模板，满足用户的品牌标记和个性化需求。  </p>
+	<p id="ac0a13585c_slot_paragraph">Photo Mark上线一周内实现4.3万人次的自然流量使用。  </p>
+	<p id="ac0a13585c_slot_paragraph">该项目展示了敏锐的市场洞察力、对用户需求的精准把控以及推动产品落地的执行力，是一款融合创新与实际需求的成功案例。 </p>
+</article>
+
+		</div>
+	</section>
+</section>
+<section>
+	<div class="flex items-center mb-4">
+		<hr class="w-12 bg-gray-900" />
+		<hr class="flex-grow bg-gray-100" />
+	</div>
+	<section
+        id="4af9095e90"
+		name="module"
+		data-layout="col">
+		<header name="module-header">
+			<h1 name="module-title">教育背景</h1>
+		</header>
+		<div name="module-body">
+			<article id="7a94b89702" name="module-article" data-layout="col">
+    <div class="basis-1/4 flex flex-col pr-3 gap-2">
+        <span id="7a94b89702_slot_1" class="leading-none">2023-2024</span>
+        <span id="7a94b89702_slot_2" class="leading-none">计算机（硕士）</span>
+    </div>
+    <div class="basis-3/4 space-y-1">
+        <span id="7a94b89702_slot_set_0" class="leading-none">
+            Queen Mary University of London (QS 120) 
+        </span>
+<div id="7a94b89702_slot_paragraph" class="space-y-1">
+        <p>主修用户心理学、人机交互设计、数据分析及风险预测。辅修AI应用的探索。 </p>
+    </div>
+    </div>
+</article>
+<article id="bb007717fc" name="module-article" data-layout="col">
+    <div class="basis-1/4 flex flex-col pr-3 gap-2">
+        <span id="bb007717fc_slot_1" class="leading-none">2018-2022</span>
+        <span id="bb007717fc_slot_2" class="leading-none">计算机（学士）</span>
+    </div>
+    <div class="basis-3/4 space-y-1">
+        <span id="bb007717fc_slot_set_0" class="leading-none">
+            南京邮电大学（双一流高校） 
+        </span>
+<div id="bb007717fc_slot_paragraph" class="space-y-1">
+        <p>主修Web全栈开发、网络及信息安全基础。辅修平面及UI设计、摄影技术。 </p>
+    </div>
+    </div>
+</article>
+
+		</div>
+	</section>
+</section>
+<section>
+	<div class="flex items-center mb-4">
+		<hr class="w-12 bg-gray-900" />
+		<hr class="flex-grow bg-gray-100" />
+	</div>
+	<section
+        id="fcc15aa58f"
+		name="module"
+		data-layout="col">
+		<header name="module-header">
+			<h1 name="module-title">工作经历</h1>
+		</header>
+		<div name="module-body">
+			<article
+	id="e26d9a50ec"
+	name="module-article">
+	<div>
+		<div class="flex flex-wrap">
+			<span
+				id="e26d9a50ec_slot_1"
+				class="basis-full"
+				>2024.01-至今</span
+			>
+		</div>
+		<div class="flex justify-between gap-2">
+			<span id="e26d9a50ec_slot_set_0">联通（江苏）产业互联网有限公司</span>
+			<span>
+				   
+				<span id="e26d9a50ec_slot_set_1"> 解决方案经理 </span>
+				  
+			</span>
+		</div>
+	</div>
+	<p id="e26d9a50ec_slot_paragraph">在联通（江苏）产业互联网有限公司担任解决方案经理，负责为企业及政府单位提供定制化的数字化解决方案。通过深入调研客户的业务流程及痛点，设计并实施了结合云计算、大数据和人工智能技术的创新解决方案。  </p>
+	<p id="e26d9a50ec_slot_paragraph">	•	需求分析与客户沟通：与客户建立深度合作关系，明确业务需求，设计符合目标的解决方案，成功优化了多个核心流程。  </p>
+	<p id="e26d9a50ec_slot_paragraph">	•	团队协作与跨部门资源整合：协调内部研发团队与客户运营团队，确保项目的按时交付和持续优化。  </p>
+	<p id="e26d9a50ec_slot_paragraph">	•	技术落地与持续优化：推进系统开发与部署的全生命周期管理，通过大数据分析与人工智能优化，提供后期维护及迭代升级服务。  </p>
+	<p id="e26d9a50ec_slot_paragraph">该职位充分展示了我的商业敏锐度、技术洞察力及客户关系管理能力，同时积累了跨行业的实践经验，为未来的商务拓展工作打下了坚实基础。 </p>
+</article>
+
+		</div>
+	</section>
+</section>
+<section>
+	<div class="flex items-center mb-4">
+		<hr class="w-12 bg-gray-900" />
+		<hr class="flex-grow bg-gray-100" />
+	</div>
+	<section
+        id="dec77d7505"
+		name="module"
+		data-layout="col">
+		<header name="module-header">
+			<h1 name="module-title">语言</h1>
+		</header>
+		<div name="module-body">
+			<ul class="space-y-1">
+  <li id="9601b1f544_slot_set_0">中文：母语  </li>
+  <li id="9601b1f544_slot_set_1">英语：日常交流（IELTS 6.5） </li>
+</ul>
+
+		</div>
+	</section>
+</section>
+</main>
+
+	</body>
+	<script src="/templates/js/paged.polyfill.js"></script>
+</html>

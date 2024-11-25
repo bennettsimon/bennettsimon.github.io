@@ -1,0 +1,71 @@
+/* noto-sans-sc-300 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'CFont Noto Sans SC';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/noto-sans-sc-v37-chinese-simplified_latin-300.woff2') format('woff2');
+    unicode-range: U+4E00-9FFF;
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* noto-sans-sc-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'CFont Noto Sans SC';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/noto-sans-sc-v37-chinese-simplified_latin-regular.woff2') format('woff2');
+    unicode-range: U+4E00-9FFF;
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* noto-sans-sc-500 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'CFont Noto Sans SC';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/noto-sans-sc-v37-chinese-simplified_latin-500.woff2') format('woff2');
+    unicode-range: U+4E00-9FFF;
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* noto-sans-sc-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'CFont Noto Sans SC';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/noto-sans-sc-v37-chinese-simplified_latin-600.woff2') format('woff2');
+    unicode-range: U+4E00-9FFF;
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* noto-sans-sc-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'CFont Noto Sans SC';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/noto-sans-sc-v37-chinese-simplified_latin-700.woff2') format('woff2');
+    unicode-range: U+4E00-9FFF;
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* noto-sans-sc-800 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'CFont Noto Sans SC';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/noto-sans-sc-v37-chinese-simplified_latin-800.woff2') format('woff2');
+    unicode-range: U+4E00-9FFF;
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
